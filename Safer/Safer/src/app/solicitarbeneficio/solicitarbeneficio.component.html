@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 
-<div>
+<div style="margin-bottom: 180px;">
     <div class="container-fluid" style="background-color: #E8505B; height: 300px;">
         <div class="row">
             <div class="col-md-12" style="margin-top: 70px;">
@@ -20,27 +20,61 @@
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
                 <div class="formulario">
-                    <div class="form-group mb-5" style="width: 500px;" >
-                        <input type="text" class="form-control" style="height: 60px;" id="formGroupExampleInput"
+                    <div class="form-group mb-5" style="width: 500px;">
+                        <input type="text" class="form-control" style="height: 60px;" id="campoNome"
                             placeholder="Nome Completo">
                     </div>
                     <div class="form-group mb-5">
-                        <input type="text" class="form-control" style="height: 60px;" id="formGroupExampleInput"
+                        <input type="text" class="form-control" style="height: 60px;" id="campoCpf"
+                            placeholder="CPF(Proprietário)">
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <input type="password" class="form-control" style="height: 60px;" id="campoSenha"
+                            placeholder="Senha">
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <input type="password" class="form-control" style="height: 60px;" id="campoConfirmarSenha"
+                            placeholder="Confirmar Senha">
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <input type="text" class="form-control" style="height: 60px;" id="campoNomeEmpresa"
                             placeholder="Nome do Estabelecimento">
                     </div>
                     <div class="form-group mb-5">
-                        <input type="text" class="form-control" style="height: 60px;" id="formGroupExampleInput"
+                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj"
                             placeholder="CNPJ">
                     </div>
                     <div class="form-group mb-5">
-                        <input type="email" class="form-control" style="height: 60px;" id="formGroupExampleInput"
+                        <input type="email" class="form-control" style="height: 60px;" id="campoEmail"
                             placeholder="E-mail">
                     </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Contrato de Aluguel</label>
+                        <input type="file" class="form-control-file mb-5" id="arquivoAluguel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Extrato Bancario (Últimos 6 Meses)</label>
+                        <input type="file" class="form-control-file mb-5" id="arquivoExtrato">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Notas Emitidas (Últimos 6 meses)</label>
+                        <input type="file" class="form-control-file mb-5" id="arquivoNota">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Holerite dos Funcionários (Últimos 6 meses, máximo de dois funcionarios)</label>
+                        <input type="file" class="form-control-file mb-5" id="arquivoNota">
+                    </div>
+
+                    <button type="button" class="btn btn-outline-danger" style="width: 520px;">Enviar</button>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </div>
