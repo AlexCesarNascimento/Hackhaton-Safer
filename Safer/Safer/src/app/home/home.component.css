@@ -1,7 +1,7 @@
 .principal{
-    background-image: url(../../assets/testefundo.png);
+    background-image: url(../../assets/testandofundo.png);
     background-repeat: no-repeat;
-    height: 700px;
+    height: 600px;
     background-size: cover;
     border: 0px !important;
 }
@@ -256,17 +256,7 @@
     animation-delay: 1s;
   }
   
-  /* Simple CSS3 Fade-in Animation */
-  .underlineHover:after {
-    display: block;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 2px;
-    background-color: #56baed;
-    content: "";
-    transition: width 0.2s;
-  }
+
   
   .underlineHover:hover {
     color: #0d0d0d;
