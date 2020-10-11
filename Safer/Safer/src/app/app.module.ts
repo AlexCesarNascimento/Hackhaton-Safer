@@ -13,6 +13,8 @@ import { StatusComponent } from './status/status.component';
 import { EscolaComponent } from './escola/escola.component';
 import { BlocoumComponent } from './blocoum/blocoum.component';
 import { MercadoComponent } from './mercado/mercado.component';
+import { FinancasComponent } from './financas/financas.component';
+import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MercadoComponent } from './mercado/mercado.component';
     StatusComponent,
     EscolaComponent,
     BlocoumComponent,
-    MercadoComponent
+    MercadoComponent,
+    FinancasComponent,
+    EmpreendedorismoComponent
   ],
   imports: [
     BrowserModule,

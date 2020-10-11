@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BlocoumComponent } from './blocoum/blocoum.component';
+import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
+import { FinancasComponent } from './financas/financas.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MercadoComponent } from './mercado/mercado.component';
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'sistema', component: SistemaComponent},
   { path: 'status', component: StatusComponent },
   { path: 'blocoum', component: BlocoumComponent},
-  { path: 'mercado', component: MercadoComponent}
+  { path: 'mercado', component: MercadoComponent},
+  { path: 'financas', component: FinancasComponent},
+  { path: 'empreendedorismo', component: EmpreendedorismoComponent}
 ];
 
 @NgModule({
