@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbeneficio.component';
 import { SistemaComponent } from './sistema/sistema.component';
+import { StatusComponent } from './status/status.component';
+import { EscolaComponent } from './escola/escola.component';
+import { BlocoumComponent } from './blocoum/blocoum.component';
+import { MercadoComponent } from './mercado/mercado.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { SistemaComponent } from './sistema/sistema.component';
     NavbarComponent,
     FooterComponent,
     SolicitarbeneficioComponent,
-    SistemaComponent
+    SistemaComponent,
+    StatusComponent,
+    EscolaComponent,
+    BlocoumComponent,
+    MercadoComponent
   ],
   imports: [
     BrowserModule,
