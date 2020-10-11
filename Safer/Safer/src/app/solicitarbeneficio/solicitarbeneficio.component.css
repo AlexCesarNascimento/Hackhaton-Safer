@@ -1,3 +1,19 @@
 #branco{
     color: #ffffff;
 }
+
+input[type='file'] {
+    display: none
+  }
+  
+  .input-wrapper label {
+    background-color: #E8505B;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0px;
+    padding: 6px 20px
+  }
+  
+  .input-wrapper label:hover {
+    background-color: red
+  }

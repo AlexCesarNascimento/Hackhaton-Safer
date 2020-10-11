@@ -1,6 +1,6 @@
-<app-navbar></app-navbar>
 
-<div style="margin-bottom: 180px;">
+
+<div style="margin-bottom: 100px;">
     <div class="container-fluid" style="background-color: #E8505B; height: 300px;">
         <div class="row">
             <div class="col-md-12" style="margin-top: 70px;">
@@ -13,6 +13,9 @@
 
     <div class="container-fluid">
         <div class="row">
+            <h5 class="p-2 background-color: #E8505B"><a style="color: #E8505B;" routerLink = '/home'> Voltar</a></h5>
+        </div>
+        <div class="row">
             <div class="col-md-12 d-flex justify-content-center mt-5">
                 <h5 class="mb-5" style="font-weight: bold;">Para começar, informe os seus dados:</h5>
             </div>
@@ -20,9 +23,9 @@
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
                 <div class="formulario">
-                    <div class="form-group mb-5" style="width: 500px;">
+                    <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoNome"
-                            placeholder="Nome Completo">
+                            placeholder=  "Nome Completo" > 
                     </div>
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoCpf"
@@ -44,37 +47,82 @@
                             placeholder="Nome do Estabelecimento">
                     </div>
                     <div class="form-group mb-5">
-                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj"
-                            placeholder="CNPJ">
+                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj" placeholder="CNPJ">
                     </div>
                     <div class="form-group mb-5">
                         <input type="email" class="form-control" style="height: 60px;" id="campoEmail"
                             placeholder="E-mail">
                     </div>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Contrato de Aluguel</label>
-                        <input type="file" class="form-control-file mb-5" id="arquivoAluguel">
+                    
+                    <div class="form-group mb-5">
+                        <label for="exampleFormControlFile1">Contrato Aluguel</label>
+                        <div class='input-wrapper'>
+                            <label for='input-file'>
+                                Selecionar um arquivo
+                            </label>
+                            <input id='contratoAluguel' type='file' value='' />
+                            <span id='contAluguel'></span>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Extrato Bancario (Últimos 6 Meses)</label>
-                        <input type="file" class="form-control-file mb-5" id="arquivoExtrato">
+                   
+                    <div class="form-group mb-5">
+                        <label for="exampleFormControlFile1">Extrato Bancario (Últimos 6 meses)</label>
+                        <div class='input-wrapper'>
+                            <label for='input-file'>
+                                Selecionar um arquivo
+                            </label>
+                            <input id='input-file' type='file' value='' />
+                            <span id='file-name'></span>
+                        </div>
                     </div>
 
-                    <div class="form-group">
+                    
+                    <div class="form-group mb-5">
                         <label for="exampleFormControlFile1">Notas Emitidas (Últimos 6 meses)</label>
-                        <input type="file" class="form-control-file mb-5" id="arquivoNota">
+                        <div class='input-wrapper'>
+                            <label for='input-file'>
+                                Selecionar um arquivo
+                            </label>
+                            <input id='input-file' type='file' value='' />
+                            <span id='file-name'></span>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Holerite dos Funcionários (Últimos 6 meses, máximo de dois funcionarios)</label>
-                        <input type="file" class="form-control-file mb-5" id="arquivoNota">
+                   
+                    <div class="form-group mb-5">
+                        <label for="exampleFormControlFile1">Comprovante de Endereço</label>
+                        <div class='input-wrapper'>
+                            <label for='input-file'>
+                                Selecionar um arquivo
+                            </label>
+                            <input id='input-file' type='file' value='' />
+                            <span id='file-name'></span>
+                        </div>
                     </div>
+
+                    <div class="form-group mb-5">
+                        <label for="exampleFormControlFile1">Holerite dos Funcionários (Últimos 6 meses, máximo de dois
+                            funcionarios)</label>
+                        <div class='input-wrapper'>
+                            <label for='input-file'>
+                                Selecionar um arquivo
+                            </label>
+                            <input id='input-file' type='file' value='' />
+                            <span id='file-name'></span>
+                        </div>
+                    </div>
+
+                   
 
                     <button type="button" class="btn btn-outline-danger" style="width: 520px;">Enviar</button>
+
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
+
+<app-footer></app-footer>

@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbeneficio.component';
+import { SistemaComponent } from './sistema/sistema.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbenef
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    SolicitarbeneficioComponent
+    SolicitarbeneficioComponent,
+    SistemaComponent
   ],
   imports: [
     BrowserModule,
