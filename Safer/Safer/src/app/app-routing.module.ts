@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BlocoumComponent } from './blocoum/blocoum.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { MercadoComponent } from './mercado/mercado.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SistemaComponent } from './sistema/sistema.component';
 import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbeneficio.component';
@@ -16,8 +17,8 @@ const routes: Routes = [
   { path: 'solicitarbeneficio', component: SolicitarbeneficioComponent},
   { path: 'sistema', component: SistemaComponent},
   { path: 'status', component: StatusComponent },
-  { path: 'blocoum', component: BlocoumComponent}
-
+  { path: 'blocoum', component: BlocoumComponent},
+  { path: 'mercado', component: MercadoComponent}
 ];
 
 @NgModule({
