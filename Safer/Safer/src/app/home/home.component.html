@@ -2,12 +2,12 @@
     <div class="container d-flex justify-content-end" style="margin-right: 0px;">
         <div class="row d-flex align-items-center" style="margin-left: 500px;">
             <div class="col-md-12" style="margin-top: 60px;">
-                <div id="formContent" style="background-color: #E8505B;">
+                <div id="formContent" style="background-color: #CC0000">
                     <!-- Tabs Titles -->
 
                     <!-- Icon -->
                     <div class="fadeIn first">
-                        <img src="../../assets/Logo.png" id="icon" alt="User Icon" width="150px" height="150px"
+                        <img src="../../assets/Logo.png" id="icon" alt="User Icon" width="100px" height="150px"
                             class="p-3" />
                     </div>
 
@@ -15,7 +15,7 @@
                     <div>
                         <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail">
                         <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
-                        <input type="submit" class="fadeIn fourth" value="Login">
+                        <input type="submit" class="fadeIn fourth" value="Login" routerLink = "/sistema">
                     </div>
 
                     <div id="formFooter">
@@ -31,18 +31,24 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="margin-top: 70px;">
+    <div class="container-fluid" style="margin-top: 70px; margin-left: 0px;">
         <div class="row">
-            <div class="col-md-6 bg-dark">
+            <div class="col-md-6 bg-dark p-0">
+                <h1 style="color: #FFFFFF; text-align: center; font-size: 45px; margin-top: 50px;">Conheça o aplicativo da Safer</h1>
                 <img src="../../assets/app.png" alt="Foto app" width="600px">
             </div>
-            <div class="col-md-6">
-
+            <div class="col-md-6 d-flex justify-content-center p-5" style="background-color: #FFFF00;">
+                <img src="../../assets/gif.gif" alt="Gif Aplicativo">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-end" style="background-image: url(../../assets/Comerciante.jpg); height: 600px;">
+            <div class="col-md-12 p-0 ">
+               
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #E8505B; height: 550px;">
+    <div class="container-fluid" style="background-color: #CC0000; height: 550px;">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6" style="margin-top: 200px;">
                 <div>
@@ -53,6 +59,14 @@
             </div>
             <div class="col-md-6" style="margin-top: 150px;">
                 <h1 style="color: #ffffff; font-size: 150px; text-align: center;">3,00%</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-end" style="background-image: url(../../assets/estudo.jpeg); height: 600px;">
+            <div class="col-md-12 p-0 ">
+               
             </div>
         </div>
     </div>
@@ -183,5 +197,6 @@
     </div>
 
 
-
+<app-footer></app-footer>
 </div>
+
