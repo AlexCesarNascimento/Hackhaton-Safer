@@ -17,6 +17,8 @@ import { FinancasComponent } from './financas/financas.component';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
+import { HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { TransferenciaComponent } from './transferencia/transferencia.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

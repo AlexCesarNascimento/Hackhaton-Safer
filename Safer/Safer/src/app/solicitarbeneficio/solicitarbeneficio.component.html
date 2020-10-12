@@ -25,36 +25,37 @@
                 <div class="formulario">
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoNome"
-                            placeholder=  "Nome Completo" > 
+                            placeholder=  "Nome Completo" [(ngModel)] = 'user.nome' > 
                     </div>
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoCpf"
-                            placeholder="CPF(Proprietário)">
+                            placeholder="CPF(Proprietário)" [(ngModel)] = 'user.cpf'>
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="password" class="form-control" style="height: 60px;" id="campoSenha"
-                            placeholder="Senha">
+                            placeholder="Senha" (input)='conferirSenha($event)' value="{{senha}}">
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="password" class="form-control" style="height: 60px;" id="campoConfirmarSenha"
-                            placeholder="Confirmar Senha">
+                            placeholder="Confirmar Senha" [(ngModel)] = 'user.senha'>
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoNomeEmpresa"
-                            placeholder="Nome do Estabelecimento">
+                            placeholder="Nome do Estabelecimento" [(ngModel)] = 'user.nomeempresa'>
                     </div>
                     <div class="form-group mb-5">
-                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj" placeholder="CNPJ">
+                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj" placeholder="CNPJ"
+                        [(ngModel)] = 'user.cnpj'>
                     </div>
                     <div class="form-group mb-5">
                         <input type="email" class="form-control" style="height: 60px;" id="campoEmail"
-                            placeholder="E-mail">
+                            placeholder="E-mail" [(ngModel)] = 'user.usuario'>
                     </div>
 
-                    <button type="button" class="btn btn-outline-danger" style="width: 520px;" routerLink = "/home">Enviar</button>
+                    <button type="button" class="btn btn-outline-danger" style="width: 520px;" (click) = 'cadastrar()'>Enviar</button>
 
                 </div>
             </div>
