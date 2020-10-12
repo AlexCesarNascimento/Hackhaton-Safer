@@ -1,0 +1,104 @@
+<app-navbar></app-navbar>
+
+<div class="" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row">
+                    <h5 style="color: #E8505B;">Pagar / agendar uma conta com código de barra</h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">Digitar código de barras</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Ler código com o leitor óptico</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="form-group mb-5">
+                            <input type="text" class="form-control" style="height: 45px;" id="codigoBoleto"
+                                placeholder="Digite o código de barras aqui" style="border-radius: 50px;">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6>Forma de Pagamento:</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Com débito em conta corrente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Com cartão de crédito
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6
+                            style="color: green; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">
+                            AVISO!</h6>
+                        <p>- Seu boleto não tem codigo de barras? <a href="">Clique aqui</a> para pagar </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-end">
+                        <button type="button" class="btn btn-success" style="width: 100px;">Pagar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <table class="table" style="border: 0px;">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="color: #E8505B;">Saldo resumido - 20:53h</th>
+                            <th scope="col">ocultar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Saldo em conta corrente</td>
+                            <td>484,11</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>LIS(1)</td>
+                            <td>600,00</td>
+                        </tr>
+                        <tr>
+                            <td>LIS dísponivel</td>
+                            <td>600,00</td>
+                        </tr>
+                        <tr>
+                            <td>(1) sujeito a encargos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

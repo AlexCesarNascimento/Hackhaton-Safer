@@ -15,6 +15,7 @@ import { BlocoumComponent } from './blocoum/blocoum.component';
 import { MercadoComponent } from './mercado/mercado.component';
 import { FinancasComponent } from './financas/financas.component';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.c
     BlocoumComponent,
     MercadoComponent,
     FinancasComponent,
-    EmpreendedorismoComponent
+    EmpreendedorismoComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,

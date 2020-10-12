@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MercadoComponent } from './mercado/mercado.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 import { SistemaComponent } from './sistema/sistema.component';
 import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbeneficio.component';
 import { StatusComponent } from './status/status.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'blocoum', component: BlocoumComponent},
   { path: 'mercado', component: MercadoComponent},
   { path: 'financas', component: FinancasComponent},
-  { path: 'empreendedorismo', component: EmpreendedorismoComponent}
+  { path: 'empreendedorismo', component: EmpreendedorismoComponent},
+  { path: 'pagamento', component: PagamentoComponent}
 ];
 
 @NgModule({
