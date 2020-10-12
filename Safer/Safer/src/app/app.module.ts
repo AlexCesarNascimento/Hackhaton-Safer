@@ -16,6 +16,7 @@ import { MercadoComponent } from './mercado/mercado.component';
 import { FinancasComponent } from './financas/financas.component';
 import { EmpreendedorismoComponent } from './empreendedorismo/empreendedorismo.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
     MercadoComponent,
     FinancasComponent,
     EmpreendedorismoComponent,
-    PagamentoComponent
+    PagamentoComponent,
+    TransferenciaComponent
   ],
   imports: [
     BrowserModule,

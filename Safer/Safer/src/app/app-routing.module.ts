@@ -11,6 +11,7 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
 import { SistemaComponent } from './sistema/sistema.component';
 import { SolicitarbeneficioComponent } from './solicitarbeneficio/solicitarbeneficio.component';
 import { StatusComponent } from './status/status.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'mercado', component: MercadoComponent},
   { path: 'financas', component: FinancasComponent},
   { path: 'empreendedorismo', component: EmpreendedorismoComponent},
-  { path: 'pagamento', component: PagamentoComponent}
+  { path: 'pagamento', component: PagamentoComponent},
+  { path: 'transferencia', component: TransferenciaComponent}
 ];
 
 @NgModule({
