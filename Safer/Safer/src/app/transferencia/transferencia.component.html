@@ -1,0 +1,126 @@
+<app-navbar></app-navbar>
+
+<div class="principal" style="margin-top: 100px;">
+    <h2 style="margin: 10px; color: brown;">Transferências</h2>
+    <hr style="margin-left: 8px; margin-right: 8px;">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12" style="margin-bottom: 30px;">
+                <b style="color: brown;">Ag. 3414 C/C: 01.115614.8</b>
+                <p class="card-text"><b>Saldo da Conta Corrente (R$): 50.000,00</b></p>
+            </div>
+        </div>
+
+
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header text-white bg-danger" style="text-align: center;">
+                        <b>Enviar para</b>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="instituicao" style="margin-left: 5px;">Instituição:</label>
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 70px; margin-left: 5px;" id="instituicao" maxlength="4">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tipo-de-conta" style="margin-left: 15px;">Tipo de Conta:</label>
+                                <select id="tipo-de-conta" class="form-control" style="margin-left: 15px;">
+                                    <option selected>Conta Corrente</option>
+                                    <option>Conta Poupança</option>
+                                    <option>Conta Pagamento</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="agencia" style="margin-left: 5px;">Agência:</label>
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 70px; margin-left: 5px;" id="agencia" maxlength="4">
+                            </div>
+                            <div class="form-group">
+                                <label for="conta" style="margin-left: 15px;">Conta:</label>
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 200px; margin-left: 15px;" id="conta">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="select-cpf/cnpj" style="margin-left: 5px;">CPF/CNPJ:</label>
+                                <select id="select-cpf/cnpj" class="form-control" style="margin-left: 5px;">
+                                    <option selected>CPF</option>
+                                    <option>CNPJ</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 200px; margin-left: 25px; margin-top: 31px;"
+                                    id="cpf/cnpj">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome" style="margin-left: 5px;">Nome:</label>
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 150%; margin-left: 5px;" id="nome">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-light mb-3">
+                    <div class="card-header text-white bg-danger" style="text-align: center;">
+                        <b>Dados da transação</b>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="valor" style="margin-left: 5px;">Valor R$:</label>
+                                <input type="text" class="form-control"
+                                    style="height: 40px; width: 85px; margin-left: 5px;" id="valor">
+                            </div>
+                            <div class="form-group">
+
+                                <select id="select-tipo-transferencia" class="form-control"
+                                    style="margin-left: 15px; margin-top: 33px;">
+                                    <option selected>TED</option>
+                                    <option>DOC</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="transferir-hoje" value="hoje" style="margin-top: 20px;">
+                                <label class="form-check-label" for="transferir-hoje"
+                                    style="margin-top: 20px;">Transferir Hoje</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                    id="agendar-transferencia" value="Agendar" style="margin-top: 20px;">
+                                <label class="form-check-label" for="transferir-hoje" style="margin-top: 20px;">Agendar
+                                    para </label>
+                                <input type="date" class="form-control"
+                                    style="height: 40px; width: 175px; margin-left: 15px; margin-top: 20px;" id="valor">
+                            </div>
+                        </div>
+               
+                    </div>
+                </div>
+                <div class="form-now">
+                    <button type="button" class="btn btn-outline-danger" style="margin-left: 200px; margin-top: 50px;">Cancelar</button>
+                    <button type="button" class="btn btn-danger" style="margin-left: 20px; margin-top: 50px;">Confirmar</button>
+                </div>                
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

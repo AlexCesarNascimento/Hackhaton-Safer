@@ -25,98 +25,37 @@
                 <div class="formulario">
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoNome"
-                            placeholder=  "Nome Completo" > 
+                            placeholder=  "Nome Completo" [(ngModel)] = 'user.nome' > 
                     </div>
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoCpf"
-                            placeholder="CPF(Proprietário)">
+                            placeholder="CPF(Proprietário)" [(ngModel)] = 'user.cpf'>
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="password" class="form-control" style="height: 60px;" id="campoSenha"
-                            placeholder="Senha">
+                            placeholder="Senha" (input)='conferirSenha($event)' value="{{senha}}">
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="password" class="form-control" style="height: 60px;" id="campoConfirmarSenha"
-                            placeholder="Confirmar Senha">
+                            placeholder="Confirmar Senha" [(ngModel)] = 'user.senha'>
                     </div>
 
                     <div class="form-group mb-5">
                         <input type="text" class="form-control" style="height: 60px;" id="campoNomeEmpresa"
-                            placeholder="Nome do Estabelecimento">
+                            placeholder="Nome do Estabelecimento" [(ngModel)] = 'user.nomeempresa'>
                     </div>
                     <div class="form-group mb-5">
-                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj" placeholder="CNPJ">
+                        <input type="text" class="form-control" style="height: 60px;" id="campoCnpj" placeholder="CNPJ"
+                        [(ngModel)] = 'user.cnpj'>
                     </div>
                     <div class="form-group mb-5">
                         <input type="email" class="form-control" style="height: 60px;" id="campoEmail"
-                            placeholder="E-mail">
+                            placeholder="E-mail" [(ngModel)] = 'user.usuario'>
                     </div>
 
-                    
-                    <div class="form-group mb-5">
-                        <label for="exampleFormControlFile1">Contrato Aluguel</label>
-                        <div class='input-wrapper'>
-                            <label for='input-file'>
-                                Selecionar um arquivo
-                            </label>
-                            <input id='contratoAluguel' type='file' value='' />
-                            <span id='contAluguel'></span>
-                        </div>
-                    </div>
-
-                   
-                    <div class="form-group mb-5">
-                        <label for="exampleFormControlFile1">Extrato Bancario (Últimos 6 meses)</label>
-                        <div class='input-wrapper'>
-                            <label for='input-file'>
-                                Selecionar um arquivo
-                            </label>
-                            <input id='input-file' type='file' value='' />
-                            <span id='file-name'></span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="form-group mb-5">
-                        <label for="exampleFormControlFile1">Notas Emitidas (Últimos 6 meses)</label>
-                        <div class='input-wrapper'>
-                            <label for='input-file'>
-                                Selecionar um arquivo
-                            </label>
-                            <input id='input-file' type='file' value='' />
-                            <span id='file-name'></span>
-                        </div>
-                    </div>
-
-                   
-                    <div class="form-group mb-5">
-                        <label for="exampleFormControlFile1">Comprovante de Endereço</label>
-                        <div class='input-wrapper'>
-                            <label for='input-file'>
-                                Selecionar um arquivo
-                            </label>
-                            <input id='input-file' type='file' value='' />
-                            <span id='file-name'></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group mb-5">
-                        <label for="exampleFormControlFile1">Holerite dos Funcionários (Últimos 6 meses, máximo de dois
-                            funcionarios)</label>
-                        <div class='input-wrapper'>
-                            <label for='input-file'>
-                                Selecionar um arquivo
-                            </label>
-                            <input id='input-file' type='file' value='' />
-                            <span id='file-name'></span>
-                        </div>
-                    </div>
-
-                   
-
-                    <button type="button" class="btn btn-outline-danger" style="width: 520px;">Enviar</button>
+                    <button type="button" class="btn btn-outline-danger" style="width: 520px;" (click) = 'cadastrar()'>Enviar</button>
 
                 </div>
             </div>
