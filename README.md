@@ -15,4 +15,4 @@ Passo a Passo Para execução:<br>
 
 - digite lite-server --baseDir="dist/Safer"
 
--
+- Após o comando ser executado , ira liberar para você acessar basta abrir o browser e digitar na url localhost:3000
