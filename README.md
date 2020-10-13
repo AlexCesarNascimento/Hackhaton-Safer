@@ -16,3 +16,7 @@ Passo a Passo Para execução:<br>
 - digite lite-server --baseDir="dist/Safer"
 
 - Após o comando ser executado , ira liberar para você acessar basta abrir o browser e digitar na url localhost:3000
+
+
+OBS: Não esqueça de configurar o back-end para a aplicação funcionar corretamente.
+Link Back-end : https://github.com/bpcavalcante/Hackhaton-Safer-Backend
